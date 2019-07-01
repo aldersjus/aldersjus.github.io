@@ -1,5 +1,185 @@
 <!doctype html>
 <html lang="en">
-    <h1>aldersjus on Github</h1>
-</html>        
-   
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Justin Alderson"><!-- TODO fill out these -->
+
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>aldersjus</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+
+
+#my-jumbo{
+    border: none;
+    padding: 0;
+    background-color: #18277c;
+    background-image: "image1.jpg"
+}
+
+.navbar{
+    border: none;
+    border-radius:0;
+    background-color: rgba(0,0,0,0.5);
+    background-color: #4e4e4e;
+}
+
+#bottom{
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+
+footer{
+    background-color: #4e4e4e;
+    height: -50px;
+
+}
+.card{ 
+    margin: 20px;
+}
+    
+body{
+    background-color: #BDBDBD;
+    margin: 0;
+}
+
+#left-top{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20xp;
+
+}
+.circular{
+    width:40em;
+    height: 25em;
+    margin: 3em auto 0;
+}
+.circular path{
+    fill:none;
+}
+.cicular svg{
+    display: block;
+    overflow: visible;
+}
+
+.circle-padding{
+    margin: 20px;
+}
+
+</style>
+</head>
+
+<body> 
+<main role="main">
+<nav class="navbar">
+  <ul class="nav">
+      <li class="nav-item">
+        <p class="nav-link active"><a class="text-white" href="">Home</a></p>
+      </li>
+      <li class="nav-item">
+         <p class="nav-link active"><a class="text-white" href="">Repositories</a></p>
+      </li>
+       <li class="nav-item">
+        <p class="nav-link active"><a class="text-white" href="privacy.html">Privacy Policy</a></p>
+      </li>
+       <li class="nav-item">
+         <p class="nav-link active"><a class="text-white" href="https://github.com/aldersjus">Profile</a></p>
+      </li>
+    </ul>
+    <ul class="nav">
+    </ul>
+</nav>
+
+<div class="jumbotron jumbotron-fluid" id="my-jumbo" >
+  <div class="row">  
+     <div class="col-lg-6 col-md-6 col-sm-12" align="center" id="left-top"> 
+         <div class="container">
+             <h1 class="display-4 text-white">Github home of aldersjus</h1>
+             <br><br>
+                <p class="lead text-white">The apps and repositories shown here are examples to show various technologies which I have been learning. I'm a self-taught coder who has
+                  picked up a variety of knowledge concerning some of the most popular 
+                 languages and frameworks used today. Although I lack professional experience,
+                 I'm also confident in my abilities to write code.</p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12" align="center">
+       <div class="container" id="circle-padding"> 
+            <div class="circular">
+              <svg viewBox="0 0 150 150" >
+                  <path d="M 11,40 a 30,30 0 1,1 0,1 z" stroke="" id="circle"/>
+
+                  <text fill="white">
+                      <textPath xlink:href="#circle" >Python Java Flutter Android</textPath>
+                  </text> 
+              </svg>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="card text-center">
+    <div class="card-body">
+       <h3 class="display-4"> <strong>Flutter</strong></h3>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/upload.png" alt="My awsome app" height="400" width="200">
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 line" id="line">
+                 <h3><p id="name">Triangle Calculator</p></h3>
+                 <p class="card-text">A simple app for calculating the measurments of a right angle triangle. You can enter two measurements, two sides or one angle and a side. The application will then calculate the missing sides and angles. It will also display the area and perimeter of the triangle. The application was built using Google's cross platform SDK, I wanted to understand the build process from start to finish using this SDK that's why I choose just to build a simple application. I feel that I gained valuable knowledge and I am ready to apply the lessons learnt into a more comprehensive project.</p>
+                 <a  href="" target="_blank"> Available on Google Play Store </a>
+            </div>
+             <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/upload2.png" alt="My awsome app" height="400" width="200">
+
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div class="card text-center">
+    <div class="card-body">
+       <h3 class="display-4"> <strong>Android</strong></h3>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/android.png" alt="My awsome app" class="img-fluid">
+
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 line" id="line">
+                 <h3><p id="name">EFL Teachers App Conjunction Class Management</p></h3>
+                 <p class="card-text">Organize your classes, mark off your lessons and track your students progress.
+                    This app has been created with ease of use in mind. It uses your favorite Android navigation style, just open the drawer to reveal all your options, everything is just one click away. It has been designed for EFL/ESL/ELT teachers on the go! Use this as a quick reference to ensure
+                    you never teach the same lesson twice(unless your students need it). You can create lesson files and student files. These can be used to track the lessons you’ve taught and to monitor your students progress by adding comments to their files. You can grade your students, grammar, vocabulary, listening, fluency and communicative ability. Dates are appended to lesson reports to keep track of when lessons were taught(year/month/day format).
+                    Take a picture of your student to ensure you never forget a face. App uses the built in camera application to do this. 
+                    All you need to know is displayed in the lesson and student reports for your convenience.
+                    We hope you have a trouble free experience.</p>
+                 <a  href="https://play.google.com/store/apps/details?id=jp.blogspot.jusoncode.adverbialtwo&hl=en" target="_blank"> Available on Google Play Store </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main> 
+
+<footer class="text-white">
+    <div id="bottom">
+      <div class="container-my">
+        <p class="lead text-white">aldersjus on Github 2019</p>
+      </div>
+    </div>
+</footer>
+
+</body>
