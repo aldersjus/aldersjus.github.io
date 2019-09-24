@@ -11,8 +11,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>aldersjus</title>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--font libraries-->
+<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Caveat|Luckiest+Guy&display=swap" rel="stylesheet">
+
 <style>
 
 
@@ -21,6 +28,7 @@
     padding: 0;
     background-color: #18277c;
     background-image: "image1.jpg"
+    
 }
 
 .navbar{
@@ -49,7 +57,6 @@ footer{
 body{
     background-color: #BDBDBD;
     margin: 0;
-    overflow-x: hidden;
 }
 
 #left-top{
@@ -59,6 +66,7 @@ body{
 
 }
 .circular{
+    font-family: 'Caveat', cursive;
     width:40em;
     height: 25em;
     margin: 3em auto 0;
@@ -74,36 +82,39 @@ body{
 .circle-padding{
     margin: 20px;
 }
-
+#my-title{
+    
+font-family: 'Luckiest Guy', cursive;
+}
 </style>
 </head>
 
 <body> 
 <main role="main">
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="#">aldersjus</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="privacy.html">Privacy Policy</a>
+<nav class="navbar">
+  <ul class="nav">
+      <li class="nav-item">
+        <p class="nav-link active"><a class="text-white" href="https://aldersjus.github.io">Home</a></p>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://github.com/aldersjus?tab=repositories">Repositories</a>
+      <li class="nav-item">
+         <p class="nav-link active"><a class="text-white" href="https://github.com/aldersjus?tab=repositories">Repositories</a></p>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://github.com/aldersjus">Profile</a>
+       <li class="nav-item">
+        <p class="nav-link active"><a class="text-white" href="https://aldersjus.github.io/privacy.html">Privacy Policy</a></p>
+      </li>
+       <li class="nav-item">
+         <p class="nav-link active"><a class="text-white" href="https://github.com/aldersjus">Profile</a></p>
       </li>
     </ul>
-  </div>
+    <ul class="nav">
+    </ul>
 </nav>
+
 <div class="jumbotron jumbotron-fluid" id="my-jumbo" >
   <div class="row">  
      <div class="col-lg-6 col-md-6 col-sm-12" align="center" id="left-top"> 
          <div class="container">
-             <h1 class="display-4 text-white">Github home of Justin Alderson</h1>
+             <h1 class="display-4 text-white" id="my-title">Github home of Justin Alderson</h1>
              <br><br>
                 <p class="lead text-white">The apps and repositories shown here are examples to show various technologies which I have been learning. I'm a self-taught coder who has
                   picked up a variety of knowledge concerning some of the most popular 
@@ -118,11 +129,33 @@ body{
                   <path d="M 11,40 a 30,30 0 1,1 0,1 z" stroke="" id="circle"/>
 
                   <text fill="white">
-                      <textPath xlink:href="#circle" >Python Java Flutter Android</textPath>
+                      <textPath xlink:href="#circle" >Python Angular Flutter Android</textPath>
                   </text> 
               </svg>
             </div>
           </div>
+        </div>
+    </div>
+</div>
+    
+<div class="card text-center">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              
+                 <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 line" id="line">
+                <h3 class="display-4"> <strong>Angular Apps</strong></h3>
+                <p class="card-text">Experiments with Angular, here are a cuple of versions of the same app.</p> <p class="card-text">
+                This project connects to the Oxford English dictionary. You can search base words eg: have(NOT having), it is a simple Angular app to understand how to use Services for communicating between components(siblings) and how to connect to a remote server. It has basic functionality. However, it is far from a finished app.</p>
+                <a  href="https://github.com/aldersjus/oxford-dictionary-angular" target="_blank">Repository One</a>
+                <br><br>
+                <p class="card-text">This has been built using the Angular framework and Bootstrap for the styling. It is a simple application that connects to the Oxford English dictionary API to search for the entered word. It is not production ready,it was built to learn the basics of working with Angular and using the HTTP library.
+                </p>
+                 <a  href="https://github.com/aldersjus/oxford-dictionary-two-angul" target="_blank">Repository Two</a>
+            </div>
         </div>
     </div>
 </div>
@@ -133,13 +166,14 @@ body{
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <img src="images/upload.png" alt="My awsome app" height="400" width="200">
-
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 line" id="line">
                  <h3><p id="name">Triangle Calculator</p></h3>
                  <p class="card-text">A simple app for calculating the measurments of a right angle triangle. You can enter two measurements, two sides or one angle and a side. The application will then calculate the missing sides and angles. It will also display the area and perimeter of the triangle. The application was built using Google's cross platform SDK, I wanted to understand the build process from start to finish using this SDK that's why I choose just to build a simple application. I feel that I gained valuable knowledge and I am ready to apply the lessons learnt into a more comprehensive project.</p>
                  <a  href="https://play.google.com/store/apps/details?id=io.github.aldersjus.degrees" target="_blank"> Available on Google Play Store </a>
-            </div>
+                <br>
+                 <a href="https://github.com/aldersjus/ninety_degrees" target="blank">Github Repository</a>
+             </div>
              <div class="col-lg-4 col-md-4 col-sm-12">
                 <img src="images/upload2.png" alt="My awsome app" height="400" width="200">
 
@@ -147,7 +181,59 @@ body{
         </div>
     </div>
 </div> 
-
+    
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+        <div class="card text-center">
+            <div class="card-body">
+                <img width="100" alt="Python Logo" src="https://avatars0.githubusercontent.com/u/1525981?s=200&v=4">
+                <h3 class="display-4"> <strong>Python</strong></h3>
+                <p class="card-text">Experiments with Python. Some example code can be seen through the links below. There are more
+                examples in my repositories.</p>
+                <a  href="https://github.com/aldersjus/Olympic_Pygame" target="_blank">PyGame</a>
+                <br>
+                <a  href="https://github.com/aldersjus/Learning-GUI-with-Tkinter" target="_blank">Tkinter</a>
+                <br>
+                <a  href="https://github.com/aldersjus?tab=repositories" target="_blank">All Repositories</a>
+                <br>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-sm">
+        <div class="card text-center">
+            <div class="card-body">
+                <img width="100" alt="Raspberry Pi" src="https://avatars2.githubusercontent.com/u/1294177?s=200&v=4">
+                <h3 class="display-4"> <strong>Pi</strong></h3>
+                <p class="card-text">Experiments with Pi. Some example code can be seen through the links below. There are more
+                examples in my repositories.</p>
+                <a  href="https://github.com/aldersjus/Raspberry-Pi-GPIO" target="_blank">GPIO</a>
+                <br>
+                <a  href="https://github.com/aldersjus/Home-Monitoring-Python-Three" target="_blank">Web Server</a>
+                <br>
+                <a  href="https://github.com/aldersjus?tab=repositories" target="_blank">All Repositories</a>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card text-center">
+            <div class="card-body">
+                <img width="100" alt="Angular Logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/141px-Java_programming_language_logo.svg.png">
+                <p class="card-text">Experiments with Java. Some example code can be seen through the links below. There are more
+                examples in my repositories.</p>
+                <a  href="https://github.com/aldersjus/Employee-Salary-Web-App" target="_blank">Spring Web App</a>
+                <br>
+                <a  href="https://github.com/aldersjus/Java-Company-Email-Account" target="_blank">Console</a>
+                <br>
+                <a  href="https://github.com/aldersjus?tab=repositories" target="_blank">All Repositories</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>    
+    
 <div class="card text-center">
     <div class="card-body">
        <h3 class="display-4"> <strong>Android</strong></h3>
@@ -179,9 +265,5 @@ body{
       </div>
     </div>
 </footer>
-    
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
